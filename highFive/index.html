@@ -43,6 +43,7 @@
     </div>
 
     <script>
+    var borat = new Tone.Player("borat.mp3"); //Code for borat sound
     var hand = document.getElementById("hand");
     var button = document.getElementById("button");
     hand.onclick = hand.ontouchstart = mouseActions;
@@ -54,11 +55,27 @@
     
     slap.load( "slap.mp3" );
     
+  
+    
     slap.connect(Tone.Master);
+    
+ 
 
     function mouseActions(event) {
         UnmuteButton().start();
         slap.start();
+       
+    }
+    
+    
+    if mouseActions(event) = true{
+        
+       
+        
+       borat.startTime = 2sec;
+        
+        
+        
     }
     </script>
 
